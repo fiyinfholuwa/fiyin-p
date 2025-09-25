@@ -674,7 +674,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-<p>&copy; <?php echo date('Y'); ?> Olasope Daramola Fiyinfoluwa. All Rights Reserved.</p>
+                    <p>&copy; <span id="year"></span> Olasope Daramola Fiyinfoluwa. All Rights Reserved.</p>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
                 </div>
             </div>
         </div>
